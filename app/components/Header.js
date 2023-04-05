@@ -10,14 +10,16 @@ function Header() {
         className=" z-40 ... bg-black text-white p-20 border-b-2 border-fuchsia-600"
         style={{
           fontWeight: 400,
-          padding: "15px",
+          marginLeft:"-10px",
+          marginTop:"-9px",
+          padding: "1px",
           color: "black",
           backgroundColor: "white",
           fontSize: "17px",
           position: "fixed",
           width: "100%",
           zIndex: "5",
-          borderBottom: "1px solid #dadce0",
+          borderBottom: "2px solid #aadcf0",
         }}
       >
         <div
@@ -29,7 +31,7 @@ function Header() {
             justifyContent: "space-between",
           }}
         >
-          <Link href={"/"}>
+          <Link href={"/"} style={{textDecoration:"none"}}>
             <p
               className="font-sans font-bold text-xl"
               style={{
@@ -38,17 +40,13 @@ function Header() {
                 alignItems: "center",
                 justifyContent: "space-between",
                 fontWeight: "900",
+                color:"black",
                 fontSize: "18px",
               }}
             >
-              <img
-                style={{ width: "30px" }}
-                src="https://developer.litprotocol.com/img/logo.svg"
-              />
-              Lit{""}Password{" "}
-              <span style={{ font: "5px", paddingRight: "30px" }}>
-                {" "}
-                Manager
+              <span style={{ font: "5px", paddingRight: "30px", marginLeft:"10px" }}>
+                {"  "}
+                Book Launch
               </span>
             </p>
           </Link>
@@ -58,11 +56,13 @@ function Header() {
               flexDirection: "row",
               alignItems: "center",
               justifyContent: "space-between",
-              marginRight:"70px"
+              marginRight: "10px",
             }}
           >
-            <Nav style={{ border: "2px solid black" }} />
-            <ConnectButton  />
+            <div style={{ display: "flex", alignItems: "center", justifyContent:"space-between" }}>
+              <Nav style={{ border: "2px solid black" }} />
+              <ConnectButton />
+            </div>
           </div>
         </div>
       </header>

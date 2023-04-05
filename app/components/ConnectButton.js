@@ -9,7 +9,7 @@ function ConnectButton() {
   return (
     <div>
       <Connect
-        label="Login"
+        label="connect"
         showBalance={false}
         accountStatus={{
           smallScreen: "avatar",

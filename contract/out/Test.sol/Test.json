@@ -1,0 +1,1129 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "log",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "log_address",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "val",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "log_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "int256[]",
+          "name": "val",
+          "type": "int256[]"
+        }
+      ],
+      "name": "log_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address[]",
+          "name": "val",
+          "type": "address[]"
+        }
+      ],
+      "name": "log_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "log_bytes",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "log_bytes32",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "name": "log_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "val",
+          "type": "address"
+        }
+      ],
+      "name": "log_named_address",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "val",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "log_named_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "int256[]",
+          "name": "val",
+          "type": "int256[]"
+        }
+      ],
+      "name": "log_named_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address[]",
+          "name": "val",
+          "type": "address[]"
+        }
+      ],
+      "name": "log_named_array",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "val",
+          "type": "bytes"
+        }
+      ],
+      "name": "log_named_bytes",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "val",
+          "type": "bytes32"
+        }
+      ],
+      "name": "log_named_bytes32",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "val",
+          "type": "int256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "decimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_decimal_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "val",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "decimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_decimal_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "int256",
+          "name": "val",
+          "type": "int256"
+        }
+      ],
+      "name": "log_named_int",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "val",
+          "type": "string"
+        }
+      ],
+      "name": "log_named_string",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "val",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_named_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "log_string",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "log_uint",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "name": "logs",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "IS_TEST",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "excludeArtifacts",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "excludedArtifacts_",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "excludeContracts",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "excludedContracts_",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "excludeSenders",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "excludedSenders_",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "failed",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetArtifactSelectors",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes4[]",
+              "name": "selectors",
+              "type": "bytes4[]"
+            }
+          ],
+          "internalType": "struct StdInvariant.FuzzSelector[]",
+          "name": "targetedArtifactSelectors_",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetArtifacts",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "targetedArtifacts_",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetContracts",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "targetedContracts_",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetSelectors",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes4[]",
+              "name": "selectors",
+              "type": "bytes4[]"
+            }
+          ],
+          "internalType": "struct StdInvariant.FuzzSelector[]",
+          "name": "targetedSelectors_",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "targetSenders",
+      "outputs": [
+        {
+          "internalType": "address[]",
+          "name": "targetedSenders_",
+          "type": "address[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "IS_TEST()": "fa7626d4",
+    "excludeArtifacts()": "b5508aa9",
+    "excludeContracts()": "e20c9f71",
+    "excludeSenders()": "1ed7831c",
+    "failed()": "ba414fa6",
+    "targetArtifactSelectors()": "66d9a9a0",
+    "targetArtifacts()": "85226c81",
+    "targetContracts()": "3f7286f4",
+    "targetSelectors()": "916a17c6",
+    "targetSenders()": "3e5e3c23"
+  },
+  "ast": {
+    "absolutePath": "lib/forge-std/src/Test.sol",
+    "id": 10787,
+    "exportedSymbols": {
+      "DSTest": [
+        1786
+      ],
+      "StdAssertions": [
+        3276
+      ],
+      "StdChains": [
+        3970
+      ],
+      "StdCheats": [
+        6246
+      ],
+      "StdInvariant": [
+        6536
+      ],
+      "StdStorage": [
+        7286
+      ],
+      "StdStyle": [
+        9930
+      ],
+      "StdUtils": [
+        10737
+      ],
+      "Test": [
+        10786
+      ],
+      "TestBase": [
+        1846
+      ],
+      "Vm": [
+        12140
+      ],
+      "console": [
+        20204
+      ],
+      "console2": [
+        28300
+      ],
+      "stdError": [
+        6312
+      ],
+      "stdJson": [
+        7112
+      ],
+      "stdMath": [
+        7254
+      ],
+      "stdStorage": [
+        8719
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1085:12",
+    "nodes": [
+      {
+        "id": 10739,
+        "nodeType": "PragmaDirective",
+        "src": "32:31:12",
+        "literals": [
+          "solidity",
+          ">=",
+          "0.6",
+          ".2",
+          "<",
+          "0.9",
+          ".0"
+        ]
+      },
+      {
+        "id": 10740,
+        "nodeType": "PragmaDirective",
+        "src": "65:33:12",
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ]
+      },
+      {
+        "id": 10742,
+        "nodeType": "ImportDirective",
+        "src": "166:38:12",
+        "absolutePath": "lib/forge-std/src/console.sol",
+        "file": "./console.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 20205,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10741,
+              "name": "console",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 20204,
+              "src": "174:7:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10744,
+        "nodeType": "ImportDirective",
+        "src": "205:40:12",
+        "absolutePath": "lib/forge-std/src/console2.sol",
+        "file": "./console2.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 28301,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10743,
+              "name": "console2",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 28300,
+              "src": "213:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10746,
+        "nodeType": "ImportDirective",
+        "src": "246:50:12",
+        "absolutePath": "lib/forge-std/src/StdAssertions.sol",
+        "file": "./StdAssertions.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 3277,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10745,
+              "name": "StdAssertions",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3276,
+              "src": "254:13:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10748,
+        "nodeType": "ImportDirective",
+        "src": "297:42:12",
+        "absolutePath": "lib/forge-std/src/StdChains.sol",
+        "file": "./StdChains.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 3971,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10747,
+              "name": "StdChains",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 3970,
+              "src": "305:9:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10750,
+        "nodeType": "ImportDirective",
+        "src": "340:42:12",
+        "absolutePath": "lib/forge-std/src/StdCheats.sol",
+        "file": "./StdCheats.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 6247,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10749,
+              "name": "StdCheats",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6246,
+              "src": "348:9:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10752,
+        "nodeType": "ImportDirective",
+        "src": "383:40:12",
+        "absolutePath": "lib/forge-std/src/StdError.sol",
+        "file": "./StdError.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 6313,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10751,
+              "name": "stdError",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6312,
+              "src": "391:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10754,
+        "nodeType": "ImportDirective",
+        "src": "424:48:12",
+        "absolutePath": "lib/forge-std/src/StdInvariant.sol",
+        "file": "./StdInvariant.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 6537,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10753,
+              "name": "StdInvariant",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 6536,
+              "src": "432:12:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10756,
+        "nodeType": "ImportDirective",
+        "src": "473:38:12",
+        "absolutePath": "lib/forge-std/src/StdJson.sol",
+        "file": "./StdJson.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 7113,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10755,
+              "name": "stdJson",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7112,
+              "src": "481:7:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10758,
+        "nodeType": "ImportDirective",
+        "src": "512:38:12",
+        "absolutePath": "lib/forge-std/src/StdMath.sol",
+        "file": "./StdMath.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 7255,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10757,
+              "name": "stdMath",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7254,
+              "src": "520:7:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10761,
+        "nodeType": "ImportDirective",
+        "src": "551:56:12",
+        "absolutePath": "lib/forge-std/src/StdStorage.sol",
+        "file": "./StdStorage.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 8720,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10759,
+              "name": "StdStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 7286,
+              "src": "559:10:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 10760,
+              "name": "stdStorage",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 8719,
+              "src": "571:10:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10763,
+        "nodeType": "ImportDirective",
+        "src": "608:40:12",
+        "absolutePath": "lib/forge-std/src/StdUtils.sol",
+        "file": "./StdUtils.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 10738,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10762,
+              "name": "StdUtils",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 10737,
+              "src": "616:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10765,
+        "nodeType": "ImportDirective",
+        "src": "649:28:12",
+        "absolutePath": "lib/forge-std/src/Vm.sol",
+        "file": "./Vm.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 12141,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10764,
+              "name": "Vm",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 12140,
+              "src": "657:2:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10767,
+        "nodeType": "ImportDirective",
+        "src": "678:40:12",
+        "absolutePath": "lib/forge-std/src/StdStyle.sol",
+        "file": "./StdStyle.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 9931,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10766,
+              "name": "StdStyle",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 9930,
+              "src": "686:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10769,
+        "nodeType": "ImportDirective",
+        "src": "740:36:12",
+        "absolutePath": "lib/forge-std/src/Base.sol",
+        "file": "./Base.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 1859,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10768,
+              "name": "TestBase",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1846,
+              "src": "748:8:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10771,
+        "nodeType": "ImportDirective",
+        "src": "777:40:12",
+        "absolutePath": "lib/forge-std/lib/ds-test/src/test.sol",
+        "file": "ds-test/test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 10787,
+        "sourceUnit": 1787,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 10770,
+              "name": "DSTest",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1786,
+              "src": "785:6:12",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 10786,
+        "nodeType": "ContractDefinition",
+        "src": "834:282:12",
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 10772,
+              "name": "DSTest",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1786,
+              "src": "860:6:12"
+            },
+            "id": 10773,
+            "nodeType": "InheritanceSpecifier",
+            "src": "860:6:12"
+          },
+          {
+            "baseName": {
+              "id": 10774,
+              "name": "StdAssertions",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3276,
+              "src": "868:13:12"
+            },
+            "id": 10775,
+            "nodeType": "InheritanceSpecifier",
+            "src": "868:13:12"
+          },
+          {
+            "baseName": {
+              "id": 10776,
+              "name": "StdChains",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3970,
+              "src": "883:9:12"
+            },
+            "id": 10777,
+            "nodeType": "InheritanceSpecifier",
+            "src": "883:9:12"
+          },
+          {
+            "baseName": {
+              "id": 10778,
+              "name": "StdCheats",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6246,
+              "src": "894:9:12"
+            },
+            "id": 10779,
+            "nodeType": "InheritanceSpecifier",
+            "src": "894:9:12"
+          },
+          {
+            "baseName": {
+              "id": 10780,
+              "name": "StdInvariant",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6536,
+              "src": "905:12:12"
+            },
+            "id": 10781,
+            "nodeType": "InheritanceSpecifier",
+            "src": "905:12:12"
+          },
+          {
+            "baseName": {
+              "id": 10782,
+              "name": "StdUtils",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 10737,
+              "src": "919:8:12"
+            },
+            "id": 10783,
+            "nodeType": "InheritanceSpecifier",
+            "src": "919:8:12"
+          },
+          {
+            "baseName": {
+              "id": 10784,
+              "name": "TestBase",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 1846,
+              "src": "929:8:12"
+            },
+            "id": 10785,
+            "nodeType": "InheritanceSpecifier",
+            "src": "929:8:12"
+          }
+        ],
+        "canonicalName": "Test",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          10786,
+          1846,
+          1843,
+          10737,
+          6536,
+          6246,
+          5567,
+          3970,
+          3276,
+          1786
+        ],
+        "name": "Test",
+        "nameLocation": "852:4:12",
+        "scope": 10787,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 12
+}

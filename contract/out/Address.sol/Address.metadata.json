@@ -1,0 +1,51 @@
+{
+  "compiler": {
+    "version": "0.8.15+commit.e14f2714"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [],
+    "devdoc": {
+      "details": "Collection of functions related to the address type",
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "lib/openzeppelin-contracts/contracts/utils/Address.sol": "Address"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+    ]
+  },
+  "sources": {
+    "lib/openzeppelin-contracts/contracts/utils/Address.sol": {
+      "keccak256": "0x2e53602b96c1bf97c731ed3e2a981b4f85e23a9410a5ebd36e549a4cc93340dc",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://523f47b3ecc6d4e47b4b998d3356199988eef8a42a10dff5a3660d5f9e76cc71",
+        "dweb:/ipfs/QmRLH8CNvDsuLzNCjsbpLM3RHD9he5ESXroYoDT3tpaTCA"
+      ]
+    }
+  },
+  "version": 1
+}

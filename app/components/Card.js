@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Popup from "./Popup";
 import {ethers} from "ethers";
-import validate from "/home/malik/Desktop/NFT-GATED/app/pages/api/ValidateNfts.js";
+import validate from "../pages/api/ValidateNfts";
 
 const Card = () => {
   const cardStyle = {

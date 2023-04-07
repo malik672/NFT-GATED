@@ -57,6 +57,7 @@ const Card = () => {
 
   const [address, setAddress] = useState("");
 
+
   useEffect(() => {
     async function getAddress() {
       // Check if the user has a web3 provider
@@ -82,7 +83,7 @@ const Card = () => {
   const handleClick = async () => {
     //get user's address
     const isValid = await validate( "9deb6664-b5ee-435b-a1ce-03c3978519ff", address);
-    console.log(isValid);
+    console.log(await isValid.json());
     if (isValid.ok) {
       setShowPopup(true);
     } 
@@ -105,6 +106,7 @@ const Card = () => {
         <button onClick={handleClick} style={buttonStyle}>
           Read
         </button>
+        
         {showPopup && <Popup onClose={handleClose} />}
       </div>
     </div>

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ConnectButton from "./ConnectButton";
-import Nav from "./Nav";
 import React, { useState, useEffect } from "react";
 
 function Header() {
@@ -60,7 +59,7 @@ function Header() {
             }}
           >
             <div style={{ display: "flex", alignItems: "center", justifyContent:"space-between" }}>
-              <Nav style={{ border: "2px solid black" }} />
+             
               <ConnectButton />
             </div>
           </div>
